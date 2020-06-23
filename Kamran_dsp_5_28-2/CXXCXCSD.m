@@ -1,0 +1,14 @@
+n=0:3;
+w=[0:1:255]*(pi/255);
+x=0:3;
+X1=exp(-j*w)./(exp(-j*w)-0.5);
+subplot(211)
+plot(w/pi,abs(X1))
+title('mag')
+xlabel('w/pi');
+ylabel('magnitude');
+subplot(212)
+plot(w/pi,angle(X1))
+title('Phase')
+xlabel('w/pi');
+ylabel('phase');
